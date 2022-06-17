@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: floralwhite;
+       display: flex;
+       place-items: center;
+       height: 100vh;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas: 
+        'a a b'
+        'a a b'
+        'c d d'
+        'c e e'
+        ;
+        gap: 10px;
+        width: 50%;
+        margin: auto;
+    }
+
+    main div{
+        padding: 2em;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .name1{
+        background-color: aqua;
+        grid-area: a;
+    }
+    .name2{
+        background-color: brown;
+        grid-area: b;
+    }
+    .name3{
+        background-color: cadetblue;
+        grid-area: c;
+    }
+    .name4{
+        background-color: darkolivegreen;
+        grid-area: d;
+    }
+    .name5{
+        background-color: darkslategrey;
+        grid-area: e;
+    }
+</style>
+<body>
+    <main>
+        <div class="name1"> Ada </div>
+        <div class="name2"> Adin </div>
+        <div class="name3"> Adex </div>
+        <div class="name4"> Adam </div>
+        <div class="name5"> Ado </div>
+    </main>
+</body>
+</html>
